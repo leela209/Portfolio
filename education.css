@@ -1,0 +1,151 @@
+/* ============ RESET ============ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ============ NAVIGATION ============ */
+
+header {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 8%;
+    gap: 25px;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav .active {
+    color: #38bdf8;
+}
+
+/* ============ INTRO SECTION ============ */
+
+.education-intro {
+    text-align: center;
+    padding: 60px 20px 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.education-intro h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.education-intro p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* ============ EDUCATION CARDS ============ */
+
+.education-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 8%;
+}
+
+.edu-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    border-top: 5px solid #6366f1;
+}
+
+.edu-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.edu-card i {
+    font-size: 38px;
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.edu-card h2 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.edu-card p {
+    font-size: 15px;
+    color: #555;
+    margin: 4px 0;
+}
+
+/* Alternate accent colors */
+
+.edu-card:nth-child(2) {
+    border-top: 5px solid #22c55e;
+}
+
+.edu-card:nth-child(3) {
+    border-top: 5px solid #ec4899;
+}
+
+/* ============ FOOTER ============ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #cbd5f5;
+    margin-top: 40px;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 768px) {
+
+    .nav {
+        justify-content: center;
+    }
+
+    .logo {
+        margin: 0 auto 10px;
+    }
+
+    .education-intro h1 {
+        font-size: 28px;
+    }
+
+}

@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: #f5f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ================= NAVIGATION ================= */
+
+header {
+    background: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+}
+
+.photo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+nav ol {
+    display: flex;
+    list-style: none;
+}
+
+nav ol li {
+    margin-left: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #cbd5f5;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav .active {
+    color: #38bdf8;
+}
+
+/* ================= INTRO SECTION ================= */
+
+.skills-intro {
+    text-align: center;
+    padding: 70px 20px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skills-intro h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.skills-intro p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* ================= SKILLS GRID ================= */
+
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    padding: 40px 8%;
+}
+
+/* Skill Cards */
+
+.skill-card {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.skill-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+.skill-card h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card ul li {
+    padding: 5px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+/* Accent Colors */
+
+.webdev { border-top: 5px solid #38bdf8; }
+.programming { border-top: 5px solid #6366f1; }
+.database { border-top: 5px solid #22c55e; }
+.tools { border-top: 5px solid #f97316; }
+.softskills { border-top: 5px solid #ec4899; }
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #cbd5f5;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ol {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-intro h1 {
+        font-size: 30px;
+    }
+
+}
